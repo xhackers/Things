@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Things.AddItemPage" Title="{Binding AddItemPageTitle}">
+    <ContentPage.Content>
+        <StackLayout>
+        	<Entry Text = "{Binding ItemText}" Placeholder="This it a title" />
+        	<Switch IsToggled="{Binding IsDone}" />
+        	<Button Text = "Save" Command="{Binding SaveItem}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+
